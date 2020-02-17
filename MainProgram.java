@@ -19,13 +19,11 @@ public class MainProgram {
 		draw(s1); //draw(Circle h): I'm a Circle
 		draw(s2); //draw(Square h): I'm a Square
 		draw(s3); //draw(Triangle h): I'm a Triangle
-		
-		
-		System.out.println("\nDynamic binding, method overriding, polymorphism:");
 		// Note that even though it looks like we are passing s1, s2, and s3 to the same method draw()
 		// in reality we have three different versions of this method, each designed to handle a specific
 		// type of input. This is called method overloading (remember from Introduction to Programming course!)
 		
+		System.out.println("\nDynamic binding, method overriding, polymorphism:");
 		// Instead we can have one single method for draw(). A method that takes one input of the type Shape.
 		// Shape is the parent class for Circle, Square, and Triangle.
 		// So we can create one object for each class (Circle, Square, and Triangle) but
