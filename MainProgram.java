@@ -24,7 +24,7 @@ public class MainProgram {
 		// type of input. This is called method overloading (remember from Introduction to Programming course!)
 		
 		System.out.println("\nDynamic binding, method overriding, polymorphism:");
-		// Instead we can have one single method for draw(). A method that takes one input of the type Shape.
+		// Instead we can have one single method for draw(). A method that takes one input of the Shape type.
 		// Shape is the parent class for Circle, Square, and Triangle.
 		// So we can create one object for each class (Circle, Square, and Triangle) but
 		// keep them in variables of Shape type.
