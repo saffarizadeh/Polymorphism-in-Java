@@ -31,13 +31,13 @@ public class MainProgram {
 		// This way we can pass all of them to a draw() method that takes a variable of Shape type as input.
 		// This way, the draw() method does not know the underlying type of the Shape variable until
 		// it actually calls the drawYourself() method of the object.
-		// This is polymorphism!
+		// This is polymorphism (which is enabled via dynamic binding)!
 		Shape s4 = new Circle();
 		Shape s5 = new Square();
 		Shape s6 = new Triangle();
 		draw(s4); //draw(Shape h): I'm a Circle
-		draw(s5); //draw(Shape h): I'm a Circle
-		draw(s6); //draw(Shape h): I'm a Circle
+		draw(s5); //draw(Shape h): I'm a Square
+		draw(s6); //draw(Shape h): I'm a Triangle
 		// Note that this time s4, s5, and s6 are passed to the same method draw().
 		// To test this, you can remove the other three draw() methods and see that the program still works.
 		
